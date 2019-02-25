@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/celebrity"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scoreView"
+        android:layout_width="221dp"
+        android:layout_height="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="71dp"
+        android:alpha="1"
+        android:background="#c3a99b9b"
+        android:padding="10dp"
+        android:text="Your game score: 10/15!"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="#cb8b15"
+        android:onClick="startGame"
+        android:text="Go!"
+        android:textSize="50sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#131313"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/gameScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ef626060"
+            android:text="0/10"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/celebrityImage"
+            android:layout_width="328dp"
+            android:layout_height="308dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:onClick="guessMade"
+                android:text="Button1" />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:onClick="guessMade"
+                android:text="Button2" />
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:onClick="guessMade"
+                android:text="Button3" />
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:onClick="guessMade"
+                android:text="Button4" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

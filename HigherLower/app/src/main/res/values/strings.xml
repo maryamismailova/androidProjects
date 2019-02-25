@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HigherLower</string>
+    <string name="answer_hint">Enter a number</string>
+    <string name="button_text">Guess</string>
+</resources>
